@@ -1,4 +1,4 @@
-from src.supernova.train import add
+from supernova.train import add
 
 def test_add():
     assert add(2,3)==5

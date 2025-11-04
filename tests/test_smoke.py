@@ -1,2 +1,4 @@
-def test_smoke():
-    assert 2 + 2 == 4
+from src.supernova.train import add
+
+def test_add():
+    assert add(2,3)==5

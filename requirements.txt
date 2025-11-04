@@ -1,6 +1,1 @@
-pandas
-numpy
-torch
-transformers
-evaluate
 pytest

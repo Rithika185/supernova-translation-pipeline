@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build image
         run: |
-          IMAGE=ghcr.io/${{ github.repository }}/supernova-py:$(git rev-parse --short HEAD)
+          IMAGE=ghcr.io/${{ github.repository,, }}/supernova-py:$(git rev-parse --short HEAD)
           echo "IMAGE=$IMAGE" >> $GITHUB_ENV
           docker build -t "$IMAGE" .
       - name: Push image
